@@ -4,7 +4,7 @@ title 'OS Checks: Services'
 control 'os-family-redhat-required-services' do
   impact 1.0
   title 'Ensure baseline services are present for redhat derivatives'
-  only_if { os[:family] == 'redhat' }
+  only_if { os[:family] == 'centos' || os[:family] == 'amazon' }
 
     describe service('dnsmasq') do
       it { should be_enabled }

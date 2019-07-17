@@ -41,7 +41,7 @@ end
 control 'os-family-redhat7-required-packages' do
   impact 1.0
   title 'Ensure baseline packages are present for redhat 7 derivatives'
-  only_if { (os[:family] == 'amazon' && os[:release].start_with?('2')) || (os[:family] == 'centos' && os[:release].start_with?('7')) || (os[:family] == 'redhat' && os[:release].start_with?('7'))) }
+  only_if { (os[:family] == 'amazon' && os[:release].start_with?('2')) || (os[:family] == 'centos' && os[:release].start_with?('7')) || (os[:family] == 'redhat' && os[:release].start_with?('7')) }
     describe package('cloud-utils') do
       it { should be_installed }
     end

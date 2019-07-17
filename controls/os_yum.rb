@@ -1,7 +1,7 @@
 # encoding: utf-8
 title 'OS Checks: YUM Repos'
 
-control 'os-family-redhat7-required-packages' do
+control 'os-family-redhat-repos' do
   impact 0.3
   title 'Ensure baseline yum repos are present'
   only_if { os[:family] == 'redhat' }

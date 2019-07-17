@@ -1,0 +1,11 @@
+name: inspec-profile_linux-baseline
+title: Linux Baseline Testing
+maintainer: Paul Canham
+copyright: Paul Canham
+copyright_email: paul@canham.io
+license:
+summary: An InSpec Compliance Profile for baselining packer builds
+version: 0.1.0
+supports:
+  - platform-family: redhat
+  - platform: aws

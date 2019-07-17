@@ -11,7 +11,7 @@ control 'os-family-redhat-required-services' do
       it { should be_running }
     end
 
-    describe service('chrony') do
+    describe service('chronyd') do
       it { should be_enabled }
       it { should be_running }
     end

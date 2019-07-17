@@ -1,5 +1,5 @@
 # encoding: utf-8
-title 'OS Checks'
+title 'OS Checks: Packages'
 
 control 'os-family-redhat-required-packages' do
   impact 1.0

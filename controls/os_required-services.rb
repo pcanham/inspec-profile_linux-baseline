@@ -1,5 +1,5 @@
 # encoding: utf-8
-title 'OS Checks'
+title 'OS Checks: Services'
 
 control 'os-family-redhat-required-services' do
   impact 1.0
